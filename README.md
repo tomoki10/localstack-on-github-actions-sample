@@ -35,3 +35,15 @@ Create node_modules with yarn. When you're done, run the unit test.
 $ yarn
 $ yarn unit-test
 ```
+
+### Other
+
+When deploying with CDK, please change the S3 bucket name to something unique.
+
+/lib/localstack-on-github-actions-sample-stack.ts
+
+```
+  const bucket = new Bucket(this, "local-stack-on-github-actions-test", {
+      bucketName: "***something unique name***"
+  });
+```
