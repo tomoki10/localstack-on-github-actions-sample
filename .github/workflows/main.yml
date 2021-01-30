@@ -17,5 +17,6 @@ jobs:
 
       - name: Unit Test
         run: |
+          yarn --frozen-lockfile
           docker-compose fake-service.yml up -d
           yarn unit-test
