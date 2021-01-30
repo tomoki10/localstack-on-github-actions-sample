@@ -6,7 +6,7 @@ services:
     image: localstack/localstack
     network_mode: bridge
     environment:
-      - SERVICES=${SERVICES- }
+      - SERVICES=s3
     ports:
       - "4566:4566"
     volumes:
