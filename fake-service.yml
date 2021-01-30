@@ -6,9 +6,7 @@ services:
     image: localstack/localstack
     network_mode: bridge
     environment:
-      - AWS_ACCESS_KEY_ID: dummy-access-key
-      - AWS_SECRET_ACCESS_KEY: dummy-secret-key
-      - SERVICES: s3
+      - SERVICES=s3
     ports:
       - "4566:4566"
     volumes:
