@@ -15,6 +15,7 @@ export const handler = async (event: Event) => {
     Bucket: BUCKET_NAME,
     Key: event.fileName
   });
+
   const result = await s3Client.getObject();
   console.log(result)
 }
