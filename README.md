@@ -6,12 +6,14 @@ As an example, I will create a function that Lambda to retrieve an S3 object. Re
 
 ## Getting Started
 
-Get the source
+Fork this repository.You can verify that it works by creating a PR.(Or change the pull_request part to push, etc.)
+
+If you want to check the code, get the source.
+
 ```
 git clone https://github.com/tomoki10/localstack-on-github-actions-sample.git
 ```
 
-Fork this repository.You can verify that it works by creating a PR.(Or change the pull_request part to push, etc.)
 
 ```
 /.gihub/workflows/main.yml
@@ -25,7 +27,7 @@ on:
 
 ### Local Test
 
-Start LocalStack on Docker using docker-compose
+Start LocalStack on Docker using docker-compose.
 ```
 $ docker-compose -f fake-service.yml up -d
 ```
