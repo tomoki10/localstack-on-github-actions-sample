@@ -9,7 +9,7 @@ export class LocalstackWorkStack extends cdk.Stack {
     super(scope, id, props);
 
     const bucket = new Bucket(this, "local-stack-on-github-actions-test", {
-      bucketName:"local-stack-on-github-actions-test"
+      bucketName:"local-stack-on-github-actions-zxc"
     });
 
     const lambdaRole = new Role(
